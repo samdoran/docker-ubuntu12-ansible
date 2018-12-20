@@ -1,4 +1,8 @@
 FROM ubuntu:12.04
+
+ENV CONTAINER=docker
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         python-pip \
