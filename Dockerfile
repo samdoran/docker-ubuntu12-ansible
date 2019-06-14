@@ -8,7 +8,7 @@ RUN apt-get update \
         python-pip \
         python-software-properties \
         software-properties-common \
-        systemd systemd-cron sudo \
+        sudo \
     && rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
